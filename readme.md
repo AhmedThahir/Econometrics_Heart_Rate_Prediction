@@ -120,11 +120,10 @@ I used $z$ test, instead of $t$ test, and found that lags 1, 2, and 3 are statis
 Hence, I identified $AR(3)$ as the most appropriate model.
 
 $$
-\begin{aligned}
-y_t
-&= \beta_0 + \beta_1 y_{t-1} + \beta_2 y_{t-2} + \beta_2 y_{t-3} + u_t \\
+\begin{align}
+y_t &= \beta_0 + \beta_1 y_{t-1} + \beta_2 y_{t-2} + \beta_2 y_{t-3} + u_t \\
 &= \beta_0 + \sum_{i=1}^3 \beta_i y_{t-i} + u_t
-\end{aligned}
+\end{align}
 $$
 
 
@@ -176,17 +175,11 @@ Run a test for presence of autocorrelation in the error term (Use correlogram an
 Both the graphs clearly shows that the autocorrelation lines are within the shaded bands. Hence, the total and partial autocorrelation coefficient are statistically 0, ie
 
 $$
-\begin{aligned}
-
-\begin{aligned}
+\begin{align}
 \text{PAC}(u_t, u_{t-k}) &= 0 \\
 \text{TAC}(u_t, u_{t-k}) &= 0 \\
-\end{aligned}
-
-& &
-
-(\forall k \ne 0)
-\end{aligned}
+(\forall k & \ne 0)
+\end{align}
 $$
 
 # Question 7
