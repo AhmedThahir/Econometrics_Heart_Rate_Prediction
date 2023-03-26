@@ -2,7 +2,7 @@
 title: Econometrics Report on Heart Rate Prediction using ARIMA Modelling
 ---
 
-# Question
+## Question
 
 In the excel file
 
@@ -16,9 +16,9 @@ Your response to each question must be supported by the results/estimates you ob
 
 [toc]
 
-# Pretext
+## Pretext
 
-## Given Data
+### Given Data
 
 The following is the data provided.
 
@@ -36,7 +36,7 @@ The following is the data provided.
 | 1798 | 1900-03-15 10:00:00 | 99.1875    |
 | 1799 | 1900-03-15 11:00:00 | 98.8750    |
 
-## Pre-Processing
+### Pre-Processing
 
 I performed some pre-processing to fix some errors associated with the time column format in `.xlsx` sheet, to end up with this.
 
@@ -54,11 +54,11 @@ I performed some pre-processing to fix some errors associated with the time colu
 | 1798 | 2022-03-17 10:00:00 | 99.1875    |
 | 1799 | 2022-03-17 11:00:00 | 98.8750    |
 
-## Visualization
+### Visualization
 
 ![Given_Data](assets/Given_Data.svg)
 
-# Question 1
+## Question 1
 
 Formulate a relevant null and alternative hypothesis to estimate the impact of the lagged variables. Carry out a unit root test for this series and examine if it is stationary?
 
@@ -82,7 +82,7 @@ If p value $\le 0.05$
 
 In my result, I got p-value $<< 0.05 \implies$ process is stationary
 
-# Question 2
+## Question 2
 
 Identify the appropriate ARIMA model which can be used for forecasting the actual future heart rate? (Use t-test). Interpret these coefficients.
 
@@ -127,7 +127,7 @@ y_t &= \beta_0 + \beta_1 y_{t-1} + \beta_2 y_{t-2} + \beta_2 y_{t-3} + u_t \\
 $$
 
 
-# Question 3
+## Question 3
 
 Compare a simple basic ARIMA (1,0,0) model with the model identified and proposed by you; and suggest a model which has better forecasting accuracy. (use RMSE estimates)
 
@@ -140,7 +140,7 @@ The model which has the lowest rmse for both insample and outsample prediction i
 | Outsample Prediction Heart Rate ARIMA(3,0,0)      | 2.081262 |
 | Outsample Prediction Heart Rate ARIMA(1,0,0)      | 2.081938 |
 
-# Question 4
+## Question 4
 
 Also, Compare the adjusted r-square obtained from the two competing models. 
 
@@ -151,7 +151,7 @@ Also, Compare the adjusted r-square obtained from the two competing models.
 | Outsample Prediction Heart Rate ARIMA(3,0,0)      |    0.935641 |
 | Insample Prediction Heart Rate using ARIMA(1,0,0) |    0.930654 |
 
-# Question 5
+## Question 5
 
 Conduct a unit root test for both the residual series obtained from the two competing models. Are they white noise?
 
@@ -164,7 +164,7 @@ The p value is 0, which implies that the residual series is a stationary process
 | Outsample Prediction Residual Series using ARIMA(3,0,0) |       0 |   -9.61 |
 | Outsample Prediction Residual Series using ARIMA(1,0,0) |       0 |   -8.35 |
 
-# Question 6
+## Question 6
 
 Run a test for presence of autocorrelation in the error term (Use correlogram and interpret it)
 
@@ -182,7 +182,7 @@ $$
 \end{align}
 $$
 
-# Question 7
+## Question 7
 
 Plot the predicted and actual values obtained from the most appropriate model. What do you infer?
 
@@ -194,7 +194,7 @@ The errors are also random, and mostly quite minimal.
 
 ![Error](assets/Error.svg)
 
-# Question 8
+## Question 8
 
 Based on evidence from data, what will be your advice?
 
