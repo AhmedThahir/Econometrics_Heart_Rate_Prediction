@@ -1,26 +1,17 @@
----
-title: Econometrics Report on Heart Rate Prediction using ARIMA Modelling
----
+# Heart Rate Prediction using ARIMA Modelling
 
-## Question
+To use an appropriate ARIMA model to forecast the heart rate of a patient.
 
-In the excel file
-
-- Column 1 provides a time period over which data is collected
-- Column 2 provides the heart rate of a patient recorded over time. 
-
-Use an appropriate ARIMA model to forecast the heart rate of this patient.
-
-**Note**
-Your response to each question must be supported by the results/estimates you obtain from estimation of the above equation. You are required to submit this sheet with answers/responses (and if needed, supported by excel sheets)
-
-[toc]
+Detailed code + Output shown in [notebook](heart_rate_prediction.ipynb)
 
 ## Pretext
 
 ### Given Data
 
-The following is the data provided.
+In the given `.xlsx` sheet
+
+- Column 1 provides a time period over which data is collected
+- Column 2 provides the heart rate of a patient recorded over time. 
 
 |      |                Time | Heart Rate |
 | ---: | ------------------: | ---------- |
