@@ -1,7 +1,5 @@
 # Heart Rate Prediction using ARIMA Modelling
 
-To use an appropriate ARIMA model to forecast the heart rate of a patient.
-
 Detailed code + Output shown in [notebook](heart_rate_prediction.ipynb)
 
 ## Pretext
